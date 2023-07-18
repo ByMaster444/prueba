@@ -1,0 +1,39 @@
+while true do
+
+	local miModelo = game:GetService("Workspace").Entities["Martial Artist"] -- Reemplaza "NombreDelModelo" con el nombre del modelo que buscas
+		
+	if miModelo then
+	    local args = {
+		    [1] = "Devil Fruit",
+		    [2] = "Q",
+		    [3] = CFrame.new(2306.10815, -54.1233292, -3952.51025, -0.0174452625, -0.347361892, 0.937568963, -0, 0.937711656, 0.347414762, -0.999847829, 0.00606074184, -0.0163586251),
+		    [4] = workspace:WaitForChild("Map"):WaitForChild("Islands"):WaitForChild("Goku's Island"):WaitForChild("Model"):WaitForChild("Goku's Island"):WaitForChild("Part"),
+		    [5] = 5
+		}
+		
+		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("requestAbility"):FireServer(unpack(args))
+		local args = {
+		    [1] = "Devil Fruit",
+		    [2] = "E",
+		    [3] = CFrame.new(2306.10938, -54.1233292, -3952.50977, -0.0174452625, -0.347361892, 0.937568963, -0, 0.937711656, 0.347414762, -0.999847829, 0.00606074184, -0.0163586251),
+		    [4] = workspace:WaitForChild("Map"):WaitForChild("Islands"):WaitForChild("Goku's Island"):WaitForChild("Model"):WaitForChild("Goku's Island"):WaitForChild("Part"),
+		    [5] = 5
+		}
+		
+		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("requestAbility"):FireServer(unpack(args))
+	else
+			local args = {
+		    [1] = "Devil Fruit",
+		    [2] = "R",
+		    [3] = CFrame.new(2148.39941, -52.7694092, -3994.479, 0.989758253, 0.075997062, -0.120843008, -0, 0.846514642, 0.532365322, 0.142753586, -0.526912987, 0.837844849),
+		    [4] = workspace:WaitForChild("Map"):WaitForChild("Islands"):WaitForChild("Goku's Island"):WaitForChild("Model"):WaitForChild("Goku's Island"):WaitForChild("Part"),
+		    [5] = 5
+		}
+		
+		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("requestAbility"):FireServer(unpack(args))
+	
+	end
+	
+	wait(1)
+
+end
